@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+   <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- work -->
+    <div class="container">
+    	<div class="row">
+    		<div class="autoheight">
+    			
+    			<form class="form-horizontal">
+
+					<div class="form-group">
+					    <label for="inputtext3" class="col-sm-2 control-label">text</label>
+					    <div class="col-sm-10">
+					      	<input type="text" max="10" class="form-control" id="inputtext3" placeholder="Text">
+							<p class="limit"> Limit : 10 char </p>
+					    </div>
+					</div>
+
+					<div class="form-group">
+					    <label for="inputtextarea3" class="col-sm-2 control-label">textarea</label>
+					    <div class="col-sm-10">
+					      	<textarea class="form-control" max="150" id="inputtextarea3" rows="4"></textarea>
+					      	<p class="limit"> Limit : 150 char </p>
+					    </div>
+					</div>
+
+					<div class="form-group">
+					    <label for="inputtextarea5" class="col-sm-2 control-label">textarea</label>
+					    <div class="col-sm-10">
+					      	<textarea class="form-control" max="200" id="inputtextarea5" rows="5"></textarea>
+					      	<p class="limit"> Limit : 200 char </p>
+					    </div>
+					</div>
+
+					<div class="form-group">
+					    <div class="col-sm-offset-2 col-sm-10">
+					      	<button type="submit" class="btn btn-default">Sign in</button>
+					    </div>
+					</div>
+				</form>
+
+    		</div>
+    	</div>
+    </div>
+
+		<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./lib/inputLength.js"></script>
+
+	<script type="text/javascript">
+
+	jQuery(document).ready(function($) {
+
+		$('input,textarea').inputLength();
+	
+	});	
+
+	</script>
+
+  </body>
+</html>
